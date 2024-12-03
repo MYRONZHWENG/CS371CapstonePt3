@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script src ="client.js"></script>
+</head>
+<body>
+    <h2>NYC Best Restaurants</h2> 
+    <label for="US-State">US State of Restaurant(s):</label>
+    <input type="text" id="US-State" />
+    <button id="find">Find</button>
+    <p id="list-of-restaurants"></p>
+    
+    <h2>Add a New Restaurant</h2>
+    <form id="restaurant-form">
+        <label for="restaurant_name">Restaurant Name:</label>
+        <input type="text" id="restaurant_name" required /><br />
+        
+        <label for="city">City:</label>
+        <input type="text" id="city" required /><br />
+        
+        <label for="state">State:</label>
+        <input type="text" id="state" required maxlength="2" /><br />
+        
+        <label for="address">Address:</label>
+        <input type="text" id="address" required /><br />
+        
+        <label for="description">Description:</label>
+        <input type="text" id="description" /><br />
+        
+        <label for="cuisine_type">Cuisine Type:</label>
+        <input type="text" id="cuisine_type" /><br />
+        
+        <label for="head_chef_or_lead">Head Chef:</label>
+        <input type="text" id="head_chef_or_lead" /><br />
+        
+        <label for="website">Website:</label>
+        <input type="url" id="website" /><br />
+        
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+    <h2>Delete a Restaurant</h2>
+    <form id="delete-form">
+        <label for="delete-state">State:</label>
+        <input type="text" id="delete-state" required maxlength="2" /><br />
+        
+        <label for="delete-city">City:</label>
+        <input type="text" id="delete-city" required /><br />
+        
+        <label for="delete-restaurant-name">Restaurant Name:</label>
+        <input type="text" id="delete-restaurant-name" required /><br />
+        
+        <button type="submit" id="delete-restaurant">Delete Restaurant</button>
+    </form>
+    <p id="delete-message"></p> <!-- To display the success/error message -->
+</body>
+</html>
