@@ -20,7 +20,7 @@ const clientConfig = {
 };
 
 app.get('/state', async function (req, res) {
-    const code = req.query['input'];
+    const code = req.query['enter'];
     if (!code || code.length !== 2) {
         return res.status(400).send("Invalid state code. Please enter a valid 2-character state code.");
     }

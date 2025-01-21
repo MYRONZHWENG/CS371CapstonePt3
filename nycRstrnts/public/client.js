@@ -33,7 +33,7 @@
             return;
         }
 
-        fetch("state?input=" + contents)
+        fetch("state?enter=" + contents)
             .then(checkStatus)
             .then(resp => resp.json())
             .then(displayRestaurants)
